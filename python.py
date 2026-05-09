@@ -7,3 +7,4 @@ elif guess < secret_number:
     print("Too low!")
 else:
     print("Too high!")
+print("hi brother")
