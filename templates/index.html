@@ -1,34 +1,43 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <head>
-    <title>Hello World</title>
-    <style>
-       .bigb {
-           width: 200px;
-           height: 200px;
-           background-color: blue;
-           display: flex;
-       }
-       .smallb {
-           width: 50px;
-           height: 50px;
-           background-color: red
-           margin: 20px
-       }
-    </style>
-    
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <div class="bigb">
-       <div class="smallb">
-       </div>
-       <div class="smallb">
-          
-       </div>
-        
+  <title>AI Proctor — Welcome</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="landing-page">
+  <div class="landing-container">
+    <div class="landing-logo">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="16" fill="#2563eb"/>
+        <path d="M14 20h28v18H14z" rx="3" fill="none" stroke="white" stroke-width="2.5"/>
+        <circle cx="28" cy="29" r="5" fill="none" stroke="white" stroke-width="2.5"/>
+        <circle cx="28" cy="29" r="2" fill="white"/>
+        <path d="M22 20v-3a6 6 0 0 1 12 0v3" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
     </div>
-    
-  </body>
+    <h1 class="landing-title">AI Proctor</h1>
+    <p class="landing-sub">Secure, AI-powered examination monitoring</p>
+
+    <div class="landing-cards">
+      <a href="/student_login" class="card card--student">
+        <div class="card-icon">🎓</div>
+        <div class="card-label">I am a Student</div>
+        <div class="card-desc">Enter your exam session</div>
+      </a>
+      <a href="/teacher_login" class="card card--teacher">
+        <div class="card-icon">🖥️</div>
+        <div class="card-label">I am a Teacher</div>
+        <div class="card-desc">Access the proctor dashboard</div>
+      </a>
+    </div>
+
+    <div class="landing-howto-link">
+      <a href="/how-to-use" class="btn btn--howto">
+        <span>📖</span> How to Use This App
+      </a>
+    </div>
+  </div>
+</body>
 </html>
